@@ -15,7 +15,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Blog = ({ title, description, imageURL, userName, isUser, id }) => {
-  const url = "https://myapp1.adaptable.app/";
+  const url = "https://myapp1.adaptable.app";
   const navigate = useNavigate();
   const handleEdit = () => {
     navigate(`/myBlogs/${id}`);

@@ -6,7 +6,7 @@ import { Typography, Box, InputLabel, Button, TextField } from "@mui/material";
 const labelStyles = { mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" };
 
 const BlogDetail = () => {
-  const url = "https://myapp1.adaptable.app/";
+  const url = "https://myapp1.adaptable.app";
   const navigate = useNavigate();
   const sendRequest = async () => {
     const res = await axios.put(url+`/api/blog/update/${id}`, {

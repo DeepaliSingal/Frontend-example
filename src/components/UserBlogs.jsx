@@ -4,7 +4,7 @@ import Blog from './Blog';
 
 const UserBlogs = () => {
   const [user, setUser] = useState();
-  const url = "https://myapp1.adaptable.app/";
+  const url = "https://myapp1.adaptable.app";
   const id = localStorage.getItem("userId");
   const sendRequest = async () =>{
     const res = await axios.get(url+`/api/blog/user/${id}`).catch(err=>console.log(err));

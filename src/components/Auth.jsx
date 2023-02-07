@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 const Auth = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const url = "https://myapp1.adaptable.app/";
+  const url = "https://myapp1.adaptable.app";
   const [inputs, setInputs] = useState({
     name: "",
     email: "",

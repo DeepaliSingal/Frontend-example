@@ -4,7 +4,7 @@ import Blog from "./Blog";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState();
-  const url = "https://myapp1.adaptable.app/";
+  const url = "https://myapp1.adaptable.app";
   const sendRequest = async () => {
     const res = await axios
       .get(url+"/api/blog")

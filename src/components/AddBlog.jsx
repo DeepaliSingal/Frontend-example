@@ -8,7 +8,7 @@ const labelStyles = { mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" };
 
 const AddBlog = () => {
   const navigate = useNavigate();
-  const url = "https://myapp1.adaptable.app/";
+  const url = "https://myapp1.adaptable.app";
   const [inputs, setInputs] = useState({
     title: "",
     description: "",

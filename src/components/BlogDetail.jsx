@@ -6,9 +6,10 @@ import { Typography, Box, InputLabel, Button, TextField } from "@mui/material";
 const labelStyles = { mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" };
 
 const BlogDetail = () => {
+  const url = "https://myapp1.adaptable.app/";
   const navigate = useNavigate();
   const sendRequest = async () => {
-    const res = await axios.put(`http://localhost:5000/api/blog/update/${id}`, {
+    const res = await axios.put(url+`http://localhost:5000/api/blog/update/${id}`, {
       title: inputs.title,
       description: inputs.description,
     }).catch(err=>console.log(err));

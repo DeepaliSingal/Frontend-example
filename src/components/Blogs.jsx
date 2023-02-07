@@ -4,9 +4,10 @@ import Blog from "./Blog";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState();
+  const url = "https://myapp1.adaptable.app/";
   const sendRequest = async () => {
     const res = await axios
-      .get("http://localhost:5000/api/blog")
+      .get(url+"http://localhost:5000/api/blog")
       .catch((err) => console.log(err));
     const data = await res.data;
     return data;

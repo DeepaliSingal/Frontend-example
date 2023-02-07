@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 const Auth = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const url = "https://myapp1.adaptable.app/";
   const [inputs, setInputs] = useState({
     name: "",
     email: "",
@@ -22,7 +23,7 @@ const Auth = () => {
   };
   const sendRequest = async (type = "login") => {
     const res = await axios
-      .post(`http://localhost:5000/api/user/${type}`, {
+      .post(url+`http://localhost:5000/api/user/${type}`, {
         name: inputs.name,
         email: inputs.email,
         password: inputs.password,

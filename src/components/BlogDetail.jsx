@@ -9,7 +9,7 @@ const BlogDetail = () => {
   const url = "https://myapp1.adaptable.app/";
   const navigate = useNavigate();
   const sendRequest = async () => {
-    const res = await axios.put(url+`http://localhost:5000/api/blog/update/${id}`, {
+    const res = await axios.put(url+`/api/blog/update/${id}`, {
       title: inputs.title,
       description: inputs.description,
     }).catch(err=>console.log(err));

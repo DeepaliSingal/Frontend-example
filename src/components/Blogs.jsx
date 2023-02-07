@@ -7,7 +7,7 @@ const Blogs = () => {
   const url = "https://myapp1.adaptable.app/";
   const sendRequest = async () => {
     const res = await axios
-      .get(url+"http://localhost:5000/api/blog")
+      .get(url+"/api/blog")
       .catch((err) => console.log(err));
     const data = await res.data;
     return data;

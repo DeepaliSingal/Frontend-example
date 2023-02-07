@@ -7,7 +7,7 @@ const UserBlogs = () => {
   const url = "https://myapp1.adaptable.app/";
   const id = localStorage.getItem("userId");
   const sendRequest = async () =>{
-    const res = await axios.get(url+`http://localhost:5000/api/blog/user/${id}`).catch(err=>console.log(err));
+    const res = await axios.get(url+`/api/blog/user/${id}`).catch(err=>console.log(err));
     const data = await res.data;
     return data;
   }

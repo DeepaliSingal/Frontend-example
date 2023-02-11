@@ -17,7 +17,7 @@ const Blogs = () => {
   }, []);
   console.log(blogs);
   return (
-    <div>
+    <div style={{display:"grid"}}>
       {blogs &&
         blogs.map((blog, index) => (
           <Blog

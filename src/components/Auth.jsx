@@ -43,12 +43,16 @@ const Auth = () => {
         .then(() => dispatch(authActions.login()))
         .then(()=>navigate("/blogs"))
         .then((data) => console.log(data));
+
+        alert(data);
     } else {
       sendRequest()
         .then((data)=> localStorage.setItem("userId",data.user._id))
         .then(() => dispatch(authActions.login()))
         .then(()=>navigate("/blogs"))
         .then((data) => console.log(data));
+
+        alert(data);
     }
   };
   const [isSignup, setIsSignup] = useState(false);
